@@ -213,7 +213,7 @@ def train(
 def generate_prompt(data_point):
     # sorry about the formatting disaster gotta move fast
     if data_point["input"]:
-        return f"""Below is an instruction that describes a task, paired with an input that provides further context. Write a response that appropriately completes the request.
+        return f"""Below is an instruction that asks, if there is one, to check if there is a vulnerability in the code given in the input.
 
 ### Instruction:
 {data_point["instruction"]}
